@@ -11,7 +11,7 @@
                     {{ Form::label('body', 'Body')}}
                     {{ Form::textarea('body', '', ['id' => 'mytextarea', 'class' => 'form-control mytextarea', 'placeholder' => 'Body Text'])}}
                 </div>
-                {{ Form::submit() }}
+                {{ Form::submit('submit', ['class'=>'btn btn-primary'])}}
             {!! Form::close() !!}
 @endsection
 
