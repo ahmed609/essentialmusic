@@ -4,17 +4,23 @@
       <span class="navbar-toggler-icon"></span>
     </button> 
   
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="nav navbar-nav">
-        <li>
-            <a href="/">Home</a> 
-            <a href="/about">About</a>
-            <a href="/services">Services</a>
-            <a href="/posts">Blog</a>
+    <div class="collapse navbar-collapse" id="navbarsCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a> 
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/services">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/posts">Blog</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="/posts/create">Create Post</a></li>
+          <li class="nav-item"><a class="nav-link" href="/posts/create">Create Post</a></li>
       </ul>
     </div>
   </nav>
