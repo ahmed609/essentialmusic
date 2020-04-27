@@ -11,7 +11,7 @@
     <hr>
     <a href="/posts/{{$post->id}}/edit" class="btn btn-primary">Edit</a>
 
-    {!! Form::open(['action'=> ['PostsController@destroy', $post->id], 'method' => 'POST', 'class'=>'pull-right'])!!}
+    {!! Form::open(['action'=> ['PostsController@destroy', $post->id], 'method' => 'POST', 'class'=>'float-right'])!!}
         {{Form::hidden('_method', 'DELETE')}}
         {{Form::submit('DELETE', ['class'=> 'btn btn-danger'])}}
     {!! Form::close() !!}
