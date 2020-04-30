@@ -18,6 +18,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/tinymce.min.js')}}"></script>
 </head>
 <body>
     <div id="app">
@@ -31,5 +32,26 @@
             </div>
         {{-- </main> --}}
     </div>
+    {{-- Scripts --}}
+    <script src="{{ asset('resources/js/app.js') }}"></script>
+       
+    {{-- Tiny MCE --}}
+        <script type="text/javascript">
+            tinymce.init({
+                selector: '#mytextarea',
+                height: 500,
+                menubar: false,
+                plugins: [
+                    'advlist autolink lists link image charmap print preview anchor',
+                    'searchreplace visualblocks code fullscreen',
+                    'insertdatetime media table paste code help wordcount'
+                ],
+                toolbar: 'undo redo | formatselect | ' +
+                'bold italic backcolor | alignleft aligncenter ' +
+                'alignright alignjustify | bullist numlist outdent indent | ' +
+                'removeformat | help'
+                });
+          </script>
+
 </body>
 </html>
